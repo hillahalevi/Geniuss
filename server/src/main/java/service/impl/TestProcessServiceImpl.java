@@ -1,14 +1,16 @@
-package service.impl;
+package src.main.java.service.impl;
+
+import org.apache.pdfbox.pdmodel.PDDocument;
+import org.apache.pdfbox.text.PDFTextStripper;
+import org.springframework.stereotype.Service;
+import src.main.java.service.ITestProcessService;
 
 import java.io.File;
 import java.io.IOException;
 
-import org.apache.pdfbox.pdmodel.PDDocument;
-import org.apache.pdfbox.text.PDFTextStripper;
-import service.ITestProcessService;
 
+@Service
 public class TestProcessServiceImpl implements ITestProcessService {
-    @Override
     public void addTest(String filePath) throws IOException {
         PDDocument document = PDDocument.load(new File(filePath));
         if (!document.isEncrypted()) {
