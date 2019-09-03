@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Geniuss.iml" filepath="$PROJECT_DIR$/Geniuss.iml" />
+      <module fileurl="file://$PROJECT_DIR$/data-model/datamodel.iml" filepath="$PROJECT_DIR$/data-model/datamodel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sdk/sdk.iml" filepath="$PROJECT_DIR$/sdk/sdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server/server.iml" filepath="$PROJECT_DIR$/server/server.iml" />
     </modules>
   </component>
 </project>

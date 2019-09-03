@@ -6,11 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Geniuss" />
+        <module name="server" />
+        <module name="datamodel" />
+        <module name="sdk" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="datamodel" target="1.5" />
       <module name="Geniuss" target="1.5" />
+      <module name="sdk" target="1.5" />
+      <module name="server" target="1.8" />
       <module name="src" target="1.5" />
     </bytecodeTargetLevel>
   </component>
