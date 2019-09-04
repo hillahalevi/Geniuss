@@ -1,6 +1,6 @@
 package controller;
 
-import global.ExtendedErrorCodes;
+import global.ErrorCodes;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -26,7 +26,7 @@ public class TestController {
             //todo add file processing logic
             service.addTest(request);
         } catch (Exception e) {
-            ValidationException ve = new ValidationException("file named " + request + " doesn't exist", ExtendedErrorCodes.NOT_FOUND, e);
+            ValidationException ve = new ValidationException("file named " + request + " doesn't exist", ErrorCodes.NOT_FOUND, e);
             LOG.error("error when adding test", ve);
         }
     }
