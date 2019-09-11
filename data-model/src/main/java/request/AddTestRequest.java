@@ -1,5 +1,8 @@
 package main.java.request;
 
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 import main.java.base.BaseTestRequest;
 
 @Data

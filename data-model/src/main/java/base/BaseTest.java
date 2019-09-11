@@ -1,6 +1,9 @@
-package base;
+package main.java.base;
 
-import javax.validation.constraints.NotNull;
+import com.sun.istack.internal.NotNull;
+import lombok.Data;
+
+
 
 @Data
 public class BaseTest {

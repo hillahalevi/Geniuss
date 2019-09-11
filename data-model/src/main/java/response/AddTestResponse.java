@@ -1,6 +1,7 @@
-package response;
+package main.java.response;
 
-import base.BaseTestResponse;
+
+import main.java.base.BaseTestResponse;
 
 public class AddTestResponse extends BaseTestResponse {
 }

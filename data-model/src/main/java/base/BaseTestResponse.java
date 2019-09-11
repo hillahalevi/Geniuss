@@ -1,4 +1,7 @@
-package base;
+package main.java.base;
+
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 @Data
 @EqualsAndHashCode(callSuper = true)
