@@ -21,9 +21,8 @@ public class TestController {
     private static final Logger LOG = LoggerFactory.getLogger(TestController.class);
 
     @PostMapping
-    void addExample(@RequestBody String request) {
+    public void addTest(@RequestBody String request) {
         try {
-            //todo add file processing logic
             service.addTest(request);
         } catch (Exception e) {
             ValidationException ve = new ValidationException("file named " + request + " doesn't exist", ErrorCodes.NOT_FOUND, e);
